@@ -7,35 +7,42 @@ import {
   Star,
   ArrowUpRight,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const features = [
   {
     icon: MessageSquareText,
+    iconWrapperClass: "bg-sky-100 text-sky-700 group-hover:bg-sky-200/80",
     title: "One simple feedback link",
     text: "Collect customer responses through one link shared by WhatsApp, SMS, email, or QR code.",
   },
   {
     icon: ShieldCheck,
+    iconWrapperClass: "bg-emerald-100 text-emerald-700 group-hover:bg-emerald-200/80",
     title: "Private complaint inbox",
     text: "Low ratings stay private so you can resolve issues before they go public.",
   },
   {
     icon: Star,
+    iconWrapperClass: "bg-amber-100 text-amber-700 group-hover:bg-amber-200/80",
     title: "Testimonial moderation",
     text: "Approve, hide, or manage every testimonial before it appears on your website.",
   },
   {
     icon: Code2,
+    iconWrapperClass: "bg-violet-100 text-violet-700 group-hover:bg-violet-200/80",
     title: "Website testimonial widget",
     text: "Embed approved testimonials on your site with a clean, fast-loading widget.",
   },
   {
     icon: ExternalLink,
+    iconWrapperClass: "bg-rose-100 text-rose-700 group-hover:bg-rose-200/80",
     title: "Google review boost",
     text: "Guide happy customers to your Google review page after positive feedback.",
   },
   {
     icon: LayoutDashboard,
+    iconWrapperClass: "bg-cyan-100 text-cyan-700 group-hover:bg-cyan-200/80",
     title: "Reputation dashboard",
     text: "Track testimonials, private feedback, approvals, and activity in one place.",
   },
@@ -64,7 +71,12 @@ function FeatureCard({ feature }) {
   const Icon = feature.icon;
   return (
     <div className="group cursor-default rounded-2xl border border-black/[0.06] bg-white p-5 transition-all duration-200 hover:border-black/[0.12] hover:bg-slate-50/60 sm:p-6">
-      <div className="mb-4 flex h-8 w-8 items-center justify-center rounded-[8px] bg-slate-100 text-slate-500 transition-colors duration-200 group-hover:bg-slate-200/70">
+      <div
+        className={cn(
+          "mb-4 flex h-8 w-8 items-center justify-center rounded-[8px] transition-colors duration-200",
+          feature.iconWrapperClass
+        )}
+      >
         <Icon size={15} />
       </div>
       <h3 className="mb-1.5 text-[13px] font-semibold leading-snug tracking-tight text-slate-900">
@@ -135,8 +147,9 @@ function FeaturedReviewCard() {
 
 export default function FeaturesSection() {
   return (
-    <section className="py-16 sm:py-20">
-      <div className="section-shell">
+    <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+      <div className="pointer-events-none absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px)] [background-size:64px_64px]" />
+      <div className="section-shell relative">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 sm:mb-12">
             <div className="mb-4 flex items-center gap-2.5">
