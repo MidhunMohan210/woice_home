@@ -2,10 +2,10 @@ import CTASection from "@/components/landing/CTASection";
 import FAQSection from "@/components/landing/FAQSection";
 import Footer from "@/components/landing/Footer";
 import HeroSection from "@/components/landing/HeroSection";
-import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import Navbar from "@/components/landing/Navbar";
 import PricingSection from "@/components/landing/PricingSection";
 import ProblemSection from "@/components/landing/ProblemSection";
+import WoiceWaySection from "@/components/landing/WoiceWaySection";
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <ProblemSection />
-        {/* <HowItWorksSection />
-        <PricingSection />
+        <WoiceWaySection />
+        {/* <PricingSection />
         <FAQSection />
         <CTASection /> */}
       </main>

@@ -346,8 +346,8 @@ export default function ProblemSection() {
                 <span className="text-[2.15rem] font-semibold tracking-tight text-slate-950 sm:text-5xl">
                   4×
                 </span>
-                <p className="mb-4 md:mb-2  text-[11px] leading-4.5 text-slate-500 sm:text-sm">
-                  more likely to share a negative experience than a positive one
+                <p className="mb-4 md:mb-2 text-[11px] leading-4.5 text-slate-500 sm:text-sm">
+                  more likely to share a negative experience than a positive. 
                 </p>
               </div>
             </div>
