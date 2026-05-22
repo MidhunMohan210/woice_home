@@ -7,6 +7,8 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import Navbar from "@/components/landing/Navbar";
 import PricingSection from "@/components/landing/PricingSection";
 import ProblemSection from "@/components/landing/ProblemSection";
+import Testimonials from "@/components/landing/Testimonials";
+import TrustedBySection from "@/components/landing/TrustedBySection";
 import WoiceWaySection from "@/components/landing/WoiceWaySection";
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
         <WoiceWaySection />
         <HowItWorks/>
         <FeaturesSection />
+        <TrustedBySection />
+        <Testimonials/>
         {/* <PricingSection />
         <FAQSection />
         <CTASection /> */}
