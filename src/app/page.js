@@ -1,5 +1,6 @@
 import CTASection from "@/components/landing/CTASection";
 import FAQSection from "@/components/landing/FAQSection";
+import FeaturesSection from "@/components/landing/FeaturesSection";
 import Footer from "@/components/landing/Footer";
 import HeroSection from "@/components/landing/HeroSection";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -17,6 +18,7 @@ export default function Home() {
         <ProblemSection />
         <WoiceWaySection />
         <HowItWorks/>
+        <FeaturesSection />
         {/* <PricingSection />
         <FAQSection />
         <CTASection /> */}
