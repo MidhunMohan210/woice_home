@@ -11,8 +11,8 @@ const planHighlights = [
 
 function HighlightItem({ item }) {
   return (
-    <li className="flex items-start gap-3 text-sm leading-6 text-white/52 sm:text-[15px]">
-      <span className="mt-0.5 flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border border-emerald-400/20 bg-emerald-400/10">
+    <li className="flex items-start gap-2.5 text-[13px] leading-6 text-white/52 sm:gap-3 sm:text-[15px]">
+      <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-emerald-400/20 bg-emerald-400/10 sm:h-[18px] sm:w-[18px]">
         <Check className="size-2.5 stroke-[2.5] text-emerald-400" />
       </span>
       <span>{item}</span>
@@ -24,7 +24,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden bg-[#080809] py-20 sm:py-28"
+      className="relative overflow-hidden bg-[#080809] py-12 sm:py-28"
     >
       {/* Ambient background glows */}
       <div
@@ -38,32 +38,32 @@ export default function PricingSection() {
 
       <div className="section-shell relative">
         {/* ── Header ── */}
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-4 flex items-center justify-center gap-2.5">
-            <div className="h-px w-7 bg-white/14" />
-            <p className="text-[11px] font-medium uppercase tracking-[0.24em] text-white/28">
+        <div className="mx-auto max-w-xl text-center sm:max-w-3xl">
+          <div className="mb-2.5 flex items-center justify-center gap-2 sm:mb-4 sm:gap-2.5">
+            <div className="h-px w-4 bg-white/14 sm:w-7" />
+            <p className="text-[11px] font-medium uppercase tracking-[0.24em] text-white/80">
               Pricing
             </p>
-            <div className="h-px w-7 bg-white/14" />
+            <div className="h-px w-4 bg-white/14 sm:w-7" />
           </div>
 
-          <h2 className="text-balance text-[2rem] font-semibold tracking-tight text-white/92 sm:text-[2.8rem]">
+          <h2 className="text-balance text-[1.45rem] font-semibold tracking-tight text-white/92 sm:text-[2.8rem]">
             Free{" "}
             <em className="font-semibold not-italic text-violet-400/90">
               during
             </em>{" "}
             beta.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-pretty text-[14px] leading-7 text-white/48 sm:text-[15px]">
+          <p className="mx-auto mt-2.5 max-w-sm text-pretty text-[12px] leading-5.5 text-white/48 sm:mt-4 sm:max-w-xl sm:text-[15px] sm:leading-7">
            Start collecting feedback and testimonials for free while Woice is in beta. No credit card. No hidden charges.
           </p>
         </div>
 
         {/* ── Card ── */}
-        <div className="relative mx-auto mt-12 max-w-3xl overflow-hidden rounded-[28px] p-6 sm:mt-14 sm:p-8">
+        <div className="relative mx-auto mt-8 max-w-3xl overflow-hidden rounded-[22px] p-3.5 sm:mt-14 sm:rounded-[28px] sm:p-8">
           {/* Gradient border layer */}
           <div
-            className="pointer-events-none absolute inset-0 rounded-[28px]"
+              className="pointer-events-none absolute inset-0 rounded-[22px] sm:rounded-[28px]"
             style={{
               background:
                 "linear-gradient(#0e0f12, #0e0f12) padding-box, " +
@@ -97,10 +97,10 @@ export default function PricingSection() {
           {/* Card content */}
           <div className="relative">
             {/* Top row */}
-            <div className="flex flex-col gap-6 border-b border-white/8 pb-8 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-4 border-b border-white/8 pb-5 sm:gap-6 sm:pb-8 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 {/* Badge */}
-                <div className="inline-flex items-center gap-1.5 rounded-full border border-violet-400/20 bg-violet-400/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-violet-400">
+                <div className="inline-flex items-center gap-1 rounded-full border border-violet-400/20 bg-violet-400/10 px-2 py-1 text-[8px] font-semibold uppercase tracking-[0.14em] text-violet-400 sm:px-3 sm:text-[10px] sm:tracking-[0.18em]">
                   <span
                     className="h-1.5 w-1.5 rounded-full bg-violet-400"
                     style={{
@@ -111,10 +111,10 @@ export default function PricingSection() {
                   Beta plan
                 </div>
 
-                <h3 className="mt-4 text-3xl font-semibold tracking-tight text-white/92">
+                <h3 className="mt-2.5 text-[1.35rem] font-semibold tracking-tight text-white/92 sm:mt-4 sm:text-3xl">
                   Woice Beta
                 </h3>
-                <p className="mt-2 max-w-[34ch] text-sm leading-6 text-white/48 sm:text-[15px]">
+                <p className="mt-1.5 max-w-[30ch] text-[12px] leading-5.5 text-white/48 sm:max-w-[34ch] sm:text-[15px]">
                   Everything you need to collect feedback, manage testimonials,
                   and build trust — free during beta.{" "}
                 </p>
@@ -123,52 +123,42 @@ export default function PricingSection() {
               {/* Price */}
               <div className="shrink-0 sm:text-right">
                 <div>
-                  <span className="text-5xl font-semibold tracking-tight text-white/92">
+                  <span className="text-[2rem] font-semibold tracking-tight text-white/92 sm:text-5xl">
                     ₹0
                   </span>
-                  <span className="ml-2 text-base font-medium text-white/28">
+                  <span className="ml-1.5 text-[12px] font-medium text-white/28 sm:ml-2 sm:text-base">
                     / month
                   </span>
                 </div>
-                <p className="mt-2 text-sm text-white/28">
+                <p className="mt-1 text-[12px] text-white/28 sm:mt-2 sm:text-sm">
                   No credit card required
                 </p>
               </div>
             </div>
 
             {/* Features */}
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4">
+            <ul className="mt-5 grid gap-2 sm:mt-8 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-4">
               {planHighlights.map((item) => (
                 <HighlightItem key={item} item={item} />
               ))}
             </ul>
 
             {/* Actions */}
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              {/* <a
-                href="#"
-                className="group  inline-flex h-20 sm:h-12 flex-1 items-center justify-center gap-2 rounded-full bg-indigo-500 px-6 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0"
-                style={{
-                  boxShadow:
-                    "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
-                }}
-              >
-                Join beta
-                <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
-              </a> */}
-              <a
+            <div className="mt-5 flex w-full flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
+         
+              <button
                style={{
                   boxShadow:
                     "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
                 }}
                 href="#faq"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-500 px-6 text-sm font-semibold  transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 text-white "
+                className="inline-flex h-10 items-center justify-center rounded-full bg-indigo-500 px-4 text-[13px] font-semibold text-white transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 sm:h-12 sm:w-3/4 sm:px-6 sm:text-sm"
               >
                 Join beta
-              </a>
+              </button>
               <a
                 href="#faq"
-                className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 px-6 text-sm font-semibold text-white/52 transition-all duration-200 hover:border-white/14 hover:bg-white/[0.03] hover:text-white/86 sm:min-w-[160px]"
+                className="inline-flex h-10 items-center justify-center rounded-full border border-white/10 px-4 text-[13px] font-semibold text-white/52 transition-all duration-200 hover:border-white/14 hover:bg-white/[0.03] hover:text-white/86 sm:h-12 sm:min-w-[160px] sm:px-6 sm:text-sm"
               >
                 Read FAQ
               </a>
@@ -177,7 +167,7 @@ export default function PricingSection() {
         </div>
 
         {/* Guarantee note */}
-        <p className="mx-auto mt-5 flex max-w-3xl items-center justify-center gap-1.5 text-[12px] text-white/24">
+        <p className="mx-auto mt-3.5 flex max-w-xl items-center justify-center gap-1.5 px-3 text-center text-[10px] leading-4.5 text-white/24 sm:mt-5 sm:max-w-3xl sm:text-[12px]">
           <ShieldCheck className="size-3.5 shrink-0" strokeWidth={2} />
           Cancel anytime · Price locked for early users · Upgrade options coming
           soon

@@ -21,8 +21,8 @@ export default function Home() {
         <FeaturesSection />
         <TrustedBySection />
         <PricingSection />
+        <FAQSection />
         <Testimonials />
-        {/* <FAQSection /> */}
       </main>
     </div>
   );
