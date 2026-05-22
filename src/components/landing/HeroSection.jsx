@@ -42,12 +42,7 @@ export default function HeroSection() {
               Get started
               <ArrowRight className="size-4" />
             </Button>
-            {/* <Button
-              variant="outline"
-              className="h-11 w-full rounded-full border-white/18 bg-white/6 px-6 text-sm text-white hover:bg-white/12 hover:text-white sm:h-12 sm:w-auto"
-            >
-              View demo
-            </Button> */}
+            {/* */}
           </div>
 
           <div className="mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-2.5 text-[11px] text-slate-300 sm:mt-8 sm:gap-4 sm:text-sm lg:gap-6">
