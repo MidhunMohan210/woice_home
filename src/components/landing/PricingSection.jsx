@@ -145,9 +145,9 @@ export default function PricingSection() {
 
             {/* Actions */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
+              {/* <a
                 href="#"
-                className="group inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-indigo-500 px-6 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0"
+                className="group  inline-flex h-20 sm:h-12 flex-1 items-center justify-center gap-2 rounded-full bg-indigo-500 px-6 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0"
                 style={{
                   boxShadow:
                     "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
@@ -155,6 +155,16 @@ export default function PricingSection() {
               >
                 Join beta
                 <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+              </a> */}
+              <a
+               style={{
+                  boxShadow:
+                    "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
+                }}
+                href="#faq"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-500 px-6 text-sm font-semibold  ttransition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 text-white flex-1"
+              >
+                Join beta
               </a>
               <a
                 href="#faq"
