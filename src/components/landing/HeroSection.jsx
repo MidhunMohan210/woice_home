@@ -7,13 +7,17 @@ import { Button } from "@/components/ui/button";
 export default function HeroSection() {
   return (
     <section className="relative bg-[#0d1b2f] pt-28 sm:pt-32 lg:pt-56">
+       <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(16,185,129,0.08),transparent_24%),linear-gradient(180deg,#050816_0%,#030712_100%)]" />
+        <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(148,163,184,0.22)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.22)_1px,transparent_1px)] [background-size:72px_72px]" />
+      </div>
       
       {/* Overflow-hidden wrapper ONLY for backgrounds/blobs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.16),_transparent_28%),radial-gradient(circle_at_78%_22%,_rgba(244,63,94,0.24),_transparent_20%),radial-gradient(circle_at_70%_72%,_rgba(59,130,246,0.22),_transparent_28%),linear-gradient(135deg,_#10243f_0%,_#0d1b2f_48%,_#08111f_100%)]" />
-        <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:96px_96px] sm:opacity-40 sm:[background-size:120px_120px]" />
+        {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.16),_transparent_28%),radial-gradient(circle_at_78%_22%,_rgba(244,63,94,0.24),_transparent_20%),radial-gradient(circle_at_70%_72%,_rgba(59,130,246,0.22),_transparent_28%),linear-gradient(135deg,_#10243f_0%,_#0d1b2f_48%,_#08111f_100%)]" /> */}
+        {/* <div className="absolute inset-0 opacity-25 [background-image:linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:96px_96px] sm:opacity-40 sm:[background-size:120px_120px]" /> */}
         <div className="absolute -left-20 top-12 h-44 w-44 rounded-full bg-cyan-300/12 blur-3xl sm:h-64 sm:w-64" />
-        <div className="absolute right-[-4rem] top-20 h-52 w-52 rounded-full bg-rose-400/12 blur-3xl sm:right-[-5rem] sm:h-72 sm:w-72" />
+        {/* <div className="absolute right-[-4rem] top-20 h-52 w-52 rounded-full bg-rose-400/12 blur-3xl sm:right-[-5rem] sm:h-72 sm:w-72" />  */}
         <div className="absolute bottom-[-5rem] left-1/3 h-44 w-44 rounded-full bg-sky-400/12 blur-3xl sm:bottom-[-7rem] sm:h-64 sm:w-64" />
       </div>
 
@@ -23,7 +27,7 @@ export default function HeroSection() {
             Beta - free for early customers
           </div> */}
 
-          <h1 className="max-w-[14ch] text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
+          <h1 className="max-w-[14ch] text-balance text-3xl font-semibold tracking-tight text-white/80 sm:text-4xl lg:text-5xl xl:text-6xl">
             Turn customer feedback into public trust.
           </h1>
 
@@ -38,12 +42,12 @@ export default function HeroSection() {
               Get started
               <ArrowRight className="size-4" />
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               className="h-11 w-full rounded-full border-white/18 bg-white/6 px-6 text-sm text-white hover:bg-white/12 hover:text-white sm:h-12 sm:w-auto"
             >
               View demo
-            </Button>
+            </Button> */}
           </div>
 
           <div className="mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-2.5 text-[11px] text-slate-300 sm:mt-8 sm:gap-4 sm:text-sm lg:gap-6">
