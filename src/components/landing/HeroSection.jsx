@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-[#0d1b2f] pt-36 sm:pt-44 lg:pt-56">
+    <section className="relative bg-[#0d1b2f] pt-28 sm:pt-32 lg:pt-56">
       
       {/* Overflow-hidden wrapper ONLY for backgrounds/blobs */}
       <div className="absolute inset-0 overflow-hidden">

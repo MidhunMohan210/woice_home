@@ -301,52 +301,52 @@ export default function ProblemSection() {
   return (
     <section
       id="features"
-      className="relative bg-white pb-16 pt-[160px] sm:pb-24 sm:pt-[200px] lg:pb-40 lg:pt-[300px]"
+      className="relative bg-white pb-12 pt-[132px] sm:pb-24 sm:pt-[200px] lg:pb-40 lg:pt-[300px]"
     >
       <div className="pointer-events-none absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-100/60 to-transparent sm:h-32 lg:h-40" />
 
       <div className="section-shell relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="mb-10 flex items-center gap-3 sm:mb-14 sm:gap-4 lg:mb-20">
+        <div className="mb-8 flex items-center gap-2.5 sm:mb-14 sm:gap-4 lg:mb-20">
           <div className="h-px w-6 bg-slate-300 sm:w-8" />
           <span className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-400">
             The Problem
           </span>
         </div>
 
-        <div className="grid items-start gap-10 sm:gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20 xl:gap-28">
+        <div className="grid items-start gap-8 sm:gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20 xl:gap-28">
           {/* Left sticky copy */}
           <div className="lg:sticky lg:top-28">
-            <h2 className="max-w-[13ch] text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-[3.2rem] lg:leading-[1.08]">
+            <h2 className="max-w-[17ch] text-[1.75rem] font-semibold tracking-tight text-slate-950 sm:text-4xl lg:text-[3.2rem] lg:leading-[1.08]">
               Happy customers stay silent.{" "}
               <em className="not-italic text-slate-400">
                 Unhappy ones go public.
               </em>
             </h2>
 
-            <p className="mt-5 max-w-md text-base leading-7 text-slate-500 sm:mt-6 sm:text-lg sm:leading-8">
+            <p className="mt-4 max-w-md text-[15px] leading-6 text-slate-500 sm:mt-6 sm:text-lg sm:leading-8">
               Most businesses don&apos;t lose trust because of one bad
               experience. They lose it because happy customers are never asked,
               and unhappy customers are heard too late.
             </p>
 
-            <div className="my-8 h-px w-full max-w-md bg-gradient-to-r from-slate-200 to-transparent sm:my-10" />
+            <div className="my-6 h-px w-full max-w-md bg-gradient-to-r from-slate-200 to-transparent sm:my-10" />
 
-            <div className="grid max-w-md gap-5 sm:gap-6">
-              <div className="flex items-end gap-3 sm:gap-4">
-                <span className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
+            <div className="grid max-w-md gap-4 sm:gap-6">
+              <div className="flex items-end gap-2.5 sm:gap-4">
+                <span className="text-[2.15rem] font-semibold tracking-tight text-slate-950 sm:text-5xl">
                   93%
                 </span>
-                <p className="mb-1 text-xs leading-5 text-slate-500 sm:text-sm">
+                <p className="mb-4 md:mb-2  text-[11px] leading-4.5 text-slate-500 sm:text-sm">
                   of unhappy customers don&apos;t complain directly.
                 </p>
               </div>
 
-              <div className="flex items-end gap-3 sm:gap-4">
-                <span className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
+              <div className="flex items-end gap-2.5 sm:gap-4">
+                <span className="text-[2.15rem] font-semibold tracking-tight text-slate-950 sm:text-5xl">
                   4×
                 </span>
-                <p className="mb-1 text-xs leading-5 text-slate-500 sm:text-sm">
+                <p className="mb-4 md:mb-2  text-[11px] leading-4.5 text-slate-500 sm:text-sm">
                   more likely to share a negative experience than a positive one
                 </p>
               </div>
@@ -354,10 +354,10 @@ export default function ProblemSection() {
           </div>
 
           {/* Right card grid */}
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3">
             {/* Card 1 — Silent happy customers */}
             <div
-              className={`${cardHoverClass} min-h-[280px] rounded-[20px] p-4 sm:row-span-2 sm:min-h-0 sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
+              className={`${cardHoverClass} min-h-[248px] rounded-[18px] p-3.5 sm:row-span-2 sm:min-h-0 sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
               style={{
                 background: "#164A35",
                 position: "relative",
@@ -396,7 +396,7 @@ export default function ProblemSection() {
               </div>
 
               <div
-                className="py-4 sm:py-5"
+                className="py-3 sm:py-5"
                 style={{
                   flex: 1,
                   display: "flex",
@@ -404,7 +404,7 @@ export default function ProblemSection() {
                   justifyContent: "center",
                 }}
               >
-                <div className="scale-[0.82] sm:scale-90 lg:scale-100">
+                <div className="scale-[0.72] sm:scale-90 lg:scale-100">
                   <MicIllustration />
                 </div>
               </div>
@@ -438,7 +438,7 @@ export default function ProblemSection() {
             {/* Card 2 — Public complaints */}
             {/* Card 2 — Public complaints */}
             <div
-              className={`${cardHoverClass} min-h-[160px] rounded-[20px] p-4 sm:min-h-[180px] sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
+              className={`${cardHoverClass} min-h-[144px] rounded-[18px] p-3.5 sm:min-h-[180px] sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
               style={{
                 background: "#8B3A3A",
                 position: "relative",
@@ -516,11 +516,11 @@ export default function ProblemSection() {
               </div>
 
               <div
-                className="scale-[0.78] sm:scale-90 lg:scale-100"
+                className="scale-[0.68] sm:scale-90 lg:scale-100"
                 style={{
                   position: "absolute",
-                  right: 8,
-                  bottom: 6,
+                  right: 2,
+                  bottom: 0,
                   opacity: 0.65,
                   zIndex: 1,
                   pointerEvents: "none",
@@ -533,7 +533,7 @@ export default function ProblemSection() {
             {/* Card 3 — No early warning */}
             {/* Card 3 — No early warning */}
             <div
-              className={`${cardHoverClass} min-h-[160px] rounded-[20px] p-4 sm:min-h-[180px] sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
+              className={`${cardHoverClass} min-h-[144px] rounded-[18px] p-3.5 sm:min-h-[180px] sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
               style={{
                 background: "#D89A2B",
                 position: "relative",
@@ -613,11 +613,11 @@ export default function ProblemSection() {
               </div>
 
               <div
-                className="scale-[0.78] sm:scale-90 lg:scale-100"
+                className="scale-[0.68] sm:scale-90 lg:scale-100"
                 style={{
                   position: "absolute",
-                  right: 8,
-                  bottom: 6,
+                  right: 2,
+                  bottom: 0,
                   opacity: 0.65,
                   zIndex: 1,
                   pointerEvents: "none",
@@ -629,7 +629,7 @@ export default function ProblemSection() {
 
             {/* Card 4 — Generic feedback forms */}
             <div
-              className={`${cardHoverClass} rounded-[20px] p-4 sm:col-span-2 sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
+              className={`${cardHoverClass} rounded-[18px] p-3.5 sm:col-span-2 sm:rounded-[22px] sm:p-5 lg:p-[22px]`}
               style={{
                 background: "#3F638C",
                 position: "relative",
@@ -664,9 +664,9 @@ export default function ProblemSection() {
                 04
               </span>
 
-              <div className="relative z-[1] flex min-h-[148px] items-center gap-3 pr-2 sm:min-h-[100px] sm:gap-5 sm:pr-3">
-                <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-5">
-                  <div className="shrink-0 scale-90 sm:scale-100">
+              <div className="relative z-[1] flex min-h-[128px] items-center gap-2.5 pr-1 sm:min-h-[100px] sm:gap-5 sm:pr-3">
+                <div className="flex min-w-0 flex-1 items-center gap-2.5 sm:gap-5">
+                  <div className="shrink-0 scale-[0.84] sm:scale-100">
                     <IconCircle bg="rgba(255,255,255,0.15)">
                       <svg
                         width="24"
@@ -714,7 +714,7 @@ export default function ProblemSection() {
                 </div>
 
                 <div
-                  className="ml-auto flex shrink-0 items-center gap-3 sm:gap-5"
+                  className="ml-auto flex shrink-0 items-center gap-2 sm:gap-5"
                   style={{
                     position: "relative",
                     zIndex: 1,
@@ -728,7 +728,7 @@ export default function ProblemSection() {
                       label="Low response rate"
                     />
                   </div>
-                  <div className="translate-x-1 scale-[0.9] sm:translate-x-2 sm:scale-100">
+                  <div className="translate-x-0.5 scale-[0.78] sm:translate-x-2 sm:scale-100">
                     <ClipboardIllustration />
                   </div>
                 </div>
@@ -737,7 +737,7 @@ export default function ProblemSection() {
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-10 lg:mt-12">
+        <div className="mt-6 sm:mt-10 lg:mt-12">
           <a
             href="#"
             className="inline-flex items-center gap-2 text-sm font-medium text-slate-950 underline-offset-4 hover:underline"
