@@ -60,7 +60,7 @@ const positiveSteps = [
       </svg>
     ),
     title: "Showcase publicly",
-    sub: "Approved ones goes live on your website",
+    sub: "Approved testimonials goes live on your website",
     badge: { label: "Approved", color: "green" },
     colorClass: "bg-emerald-950 text-emerald-400",
   },

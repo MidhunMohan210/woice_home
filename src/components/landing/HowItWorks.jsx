@@ -1,33 +1,21 @@
 const steps = [
   {
     number: "01",
-    title: "Share one simple link",
+    title: "Share your feedback link",
     description:
-      "Send your Woice link through WhatsApp, SMS, email, invoices, or a QR code at your counter.",
+      "Send your Woice link through WhatsApp, invoice, QR code, or follow-up message.",
   },
   {
     number: "02",
-    title: "Customers rate their experience",
+    title: "Woice separates responses",
     description:
-      "They choose 1 to 5 stars and share what they felt — in seconds, from any device.",
+      "Happy customers move toward testimonials. Low-rated feedback stays private.",
   },
   {
     number: "03",
-    title: "Woice separates the response",
+    title: "Publish trust, resolve issues",
     description:
-      "Low ratings go to your private inbox. Happy customers continue to the testimonial flow.",
-  },
-  {
-    number: "04",
-    title: "Approve what goes public",
-    description:
-      "Review every testimonial and publish only the ones you want to show.",
-  },
-  {
-    number: "05",
-    title: "Show proof everywhere",
-    description:
-      "Display approved testimonials on your website and guide happy customers to your Google review page.",
+      "Approve testimonials for your website and handle complaints before they go public.",
   },
 ];
 
@@ -47,8 +35,7 @@ export default function HowItWorks() {
           </div>
 
           <h2 className="mt-4 max-w-[18ch] text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl lg:leading-tight">
-            Five quiet steps. <br />
-            One stronger reputation.
+            How Woice works
           </h2>
         </div>
 

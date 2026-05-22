@@ -124,7 +124,7 @@ export default function PricingSection() {
               <div className="shrink-0 sm:text-right">
                 <div>
                   <span className="text-5xl font-semibold tracking-tight text-white/92">
-                    $0
+                    ₹0
                   </span>
                   <span className="ml-2 text-base font-medium text-white/28">
                     / month
@@ -162,7 +162,7 @@ export default function PricingSection() {
                     "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
                 }}
                 href="#faq"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-500 px-6 text-sm font-semibold  ttransition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 text-white flex-1"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-indigo-500 px-6 text-sm font-semibold  transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 text-white "
               >
                 Join beta
               </a>
