@@ -147,7 +147,10 @@ function FeaturedReviewCard() {
 
 export default function FeaturesSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 sm:py-20">
+    <section
+      id="features"
+      className="relative overflow-hidden bg-white py-16 scroll-mt-20 sm:py-20 sm:scroll-mt-28"
+    >
       <div className="pointer-events-none absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="section-shell relative">
         <div className="mx-auto max-w-6xl">

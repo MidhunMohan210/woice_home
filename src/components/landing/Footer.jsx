@@ -14,7 +14,7 @@ export default function Footer({ className = "" }) {
           <Image src={logo} alt="Woice" className="h-6 w-auto" />
         </Link>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-medium text-slate-500">
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm font-medium text-slate-500">
           <Link href="/" className="transition hover:text-slate-950">
             About
           </Link>

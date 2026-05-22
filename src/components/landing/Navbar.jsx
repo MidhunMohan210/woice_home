@@ -1,30 +1,30 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Link, Menu, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import logo from "../../assets/landing/logo.svg";
 
 const navItems = [
-  { label: "Features", href: "#features" },
   { label: "How it works", href: "#how-it-works" },
+  { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
 
-function NavLink({ href, children, className = "", onClick }) {
+function NavLink({ href, children, className = "", onClick, ...props }) {
   return (
-    <Link
+    <a
       href={href}
       onClick={onClick}
       className={[
         "text-sm font-semibold tracking-[0.16em] text-slate-500 transition-colors duration-200 hover:text-slate-950",
         className,
       ].join(" ")}
+      {...props}
     >
       {children}
-    </Link>
+    </a>
   );
 }
 
@@ -84,6 +84,7 @@ export default function Navbar() {
             <Link
               href="#pricing"
               className="inline-flex h-7 items-center justify-center rounded-full bg-red-500 px-3 text-[11px] font-semibold text-white transition-all duration-200 hover:bg-red-600 active:scale-95"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Start Free
             </Link>
@@ -143,7 +144,7 @@ export default function Navbar() {
       <header className="fixed inset-x-0 top-0 z-50 hidden px-8 pt-6 md:block lg:px-6 lg:pt-8">
         <div
           className={[
-            "mx-auto grid items-center rounded-full py-2",
+            "mx-auto grid items-center rounded-full py-3",
             "max-w-[860px] grid-cols-[auto_1fr_auto] gap-3 px-4 pl-5",
             "lg:max-w-[760px] lg:gap-2.5 lg:px-3.5 lg:py-1.5 lg:pl-4",
             "border border-white/70 bg-white/90 shadow-[0_22px_55px_-30px_rgba(15,23,42,0.35)] backdrop-blur-xl",
@@ -153,9 +154,9 @@ export default function Navbar() {
               : "translate-y-0 shadow-lg",
           ].join(" ")}
         >
-          <Link href="/" className="flex items-center gap-3 text-slate-950 lg:gap-2.5">
+          <a href="/" className="flex items-center gap-3 text-slate-950 lg:gap-2.5">
             <Image src={logo} alt="WOICE" className="h-10 w-10 lg:h-8 lg:w-8" />
-          </Link>
+          </a>
 
           <div className="flex min-w-0 justify-center">
             <nav
@@ -180,7 +181,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center justify-end gap-2">
-            <Link
+            <a
               href="#pricing"
               className={[
                 "inline-flex items-center justify-center rounded-full bg-red-500 px-6 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-red-600",
@@ -188,7 +189,7 @@ export default function Navbar() {
               ].join(" ")}
             >
               Start Free
-            </Link>
+            </a>
           </div>
         </div>
       </header>

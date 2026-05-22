@@ -24,7 +24,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative overflow-hidden bg-[#080809] py-12 sm:py-28"
+      className="relative overflow-hidden bg-[#080809] py-12 scroll-mt-20 sm:py-28 sm:scroll-mt-28"
     >
       {/* Ambient background glows */}
       <div

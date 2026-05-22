@@ -300,7 +300,7 @@ export default function ProblemSection() {
 
   return (
     <section
-      id="features"
+      id="problem"
       className="relative bg-white pb-12 pt-[132px] sm:pb-24 sm:pt-[200px] lg:pb-40 lg:pt-[300px]"
     >
       <div className="pointer-events-none absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(0,0,0,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.8)_1px,transparent_1px)] [background-size:64px_64px]" />

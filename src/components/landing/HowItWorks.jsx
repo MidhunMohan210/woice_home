@@ -23,7 +23,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="bg-[#212529] py-16 text-white sm:py-20"
+      className="bg-[#212529] py-16 text-white scroll-mt-20 sm:py-20 sm:scroll-mt-28"
     >
       <div className="section-shell">
         <div className="max-w-2xl">

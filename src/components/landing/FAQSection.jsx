@@ -50,7 +50,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="relative overflow-hidden bg-[#050816] py-10 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#050816] py-10 scroll-mt-20 sm:py-24 sm:scroll-mt-28 lg:py-28"
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.12),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(16,185,129,0.08),transparent_24%),linear-gradient(180deg,#050816_0%,#030712_100%)]" />
