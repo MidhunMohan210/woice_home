@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Footer from "@/components/landing/Footer";
+import Navbar from "@/components/landing/Navbar";
 import {
   ArrowRight,
   MessageSquareQuote,
@@ -89,12 +91,14 @@ function InfoCard({ title, description, icon: Icon, tint }) {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_18%,#ffffff_100%)] text-slate-900">
-      <div className="mx-auto flex w-full max-w-5xl flex-col px-5 pb-14 pt-12 sm:px-8 sm:pb-24 sm:pt-24">
-        <div className="mx-auto w-full max-w-3xl">
-          <div className="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.24em]">
-            About Woice
-          </div>
+    <>
+      <Navbar linkPrefix="/" />
+      <main className="min-h-screen bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_18%,#ffffff_100%)] text-slate-900">
+        <div className="mx-auto flex w-full max-w-5xl flex-col px-5 pb-14 pt-28 sm:px-8 sm:pb-24 sm:pt-44">
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.24em]">
+              About Woice
+            </div>
 
           <div className="mt-4 sm:mt-5">
             <div className="inline-flex items-center rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-[11px] text-emerald-700 sm:text-xs">
@@ -114,7 +118,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mx-auto mt-10 w-full max-w-4xl sm:mt-20">
-          <SectionBlock index={1} title="Hero / About Intro">
+          <SectionBlock index={1} title="Intro">
             <p>
               Woice is built to help businesses collect customer feedback,
               handle private complaints, and turn happy customer experiences
@@ -275,8 +279,10 @@ export default function AboutPage() {
           </SectionBlock>
         </div>
 
-      </div>
-    </main>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
 ``

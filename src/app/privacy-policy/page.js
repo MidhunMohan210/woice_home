@@ -1,4 +1,6 @@
 import { Globe, Mail } from "lucide-react";
+import Footer from "@/components/landing/Footer";
+import Navbar from "@/components/landing/Navbar";
 
 const lastUpdated = "May 23, 2026";
 
@@ -125,12 +127,14 @@ function PolicyCard({ index, title, content }) {
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_18%,#ffffff_100%)] text-slate-900">
-      <div className="mx-auto flex w-full max-w-5xl flex-col px-5 pb-14 pt-12 sm:px-8 sm:pb-24 sm:pt-24">
-        <div className="mx-auto w-full max-w-3xl">
-          <div className="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.24em]">
-            Privacy Policy
-          </div>
+    <>
+      <Navbar linkPrefix="/" />
+      <main className="min-h-screen bg-[linear-gradient(180deg,#f8fbff_0%,#ffffff_18%,#ffffff_100%)] text-slate-900">
+        <div className="mx-auto flex w-full max-w-5xl flex-col px-5 pb-14 pt-28 sm:px-8 sm:pb-24 sm:pt-44">
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="inline-flex items-center rounded-full border border-sky-100 bg-sky-50 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.24em]">
+              Privacy Policy
+            </div>
 
           <div className="mt-4 sm:mt-5">
             <div className="inline-flex items-center rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-[11px] text-emerald-700 sm:text-xs">
@@ -213,7 +217,9 @@ export default function PrivacyPolicyPage() {
             </div>
           </div>
         </section>
-      </div>
-    </main>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }

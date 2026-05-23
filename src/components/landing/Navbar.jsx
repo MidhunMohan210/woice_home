@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Link, Menu, X } from "lucide-react";
+import NextLink from "next/link";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import logo from "../../assets/landing/logo.svg";
 
@@ -11,6 +12,10 @@ const navItems = [
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
+
+function withPrefix(prefix, href) {
+  return `${prefix}${href}`;
+}
 
 function NavLink({ href, children, className = "", onClick, ...props }) {
   return (
@@ -28,7 +33,7 @@ function NavLink({ href, children, className = "", onClick, ...props }) {
   );
 }
 
-export default function Navbar() {
+export default function Navbar({ linkPrefix = "" }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -68,9 +73,9 @@ export default function Navbar() {
         {/* 44px tall bar — Apple's standard touch target height */}
         <div className="relative flex h-11 items-center justify-between px-4">
           {/* Left: logo mark */}
-          <Link href="/" className="flex items-center text-slate-950">
+          <NextLink href="/" className="flex items-center text-slate-950">
             <Image src={logo} alt="WOICE" className="h-7 w-7" />
-          </Link>
+          </NextLink>
 
           {/* Center: wordmark absolutely centred */}
           <span className="pointer-events-none absolute inset-x-0 flex justify-center">
@@ -81,13 +86,13 @@ export default function Navbar() {
 
           {/* Right: CTA + hamburger */}
           <div className="flex items-center gap-1.5">
-            <Link
-              href="#pricing"
+            <NextLink
+              href={withPrefix(linkPrefix, "#pricing")}
               className="inline-flex h-7 items-center justify-center rounded-full bg-red-500 px-3 text-[11px] font-semibold text-white transition-all duration-200 hover:bg-red-600 active:scale-95"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Start Free
-            </Link>
+            </NextLink>
 
             <button
               type="button"
@@ -120,7 +125,7 @@ export default function Navbar() {
             {navItems.map((item, index) => (
               <NavLink
                 key={item.href}
-                href={item.href}
+                href={withPrefix(linkPrefix, item.href)}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={[
                   "px-5 py-3 text-[13px] tracking-[0.1em] text-slate-700 hover:bg-slate-50/80",
@@ -154,9 +159,9 @@ export default function Navbar() {
               : "translate-y-0 shadow-lg",
           ].join(" ")}
         >
-          <a href="/" className="flex items-center gap-3 text-slate-950 lg:gap-2.5">
+          <NextLink href="/" className="flex items-center gap-3 text-slate-950 lg:gap-2.5">
             <Image src={logo} alt="WOICE" className="h-10 w-10 lg:h-8 lg:w-8" />
-          </a>
+          </NextLink>
 
           <div className="flex min-w-0 justify-center">
             <nav
@@ -171,7 +176,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <NavLink
                   key={item.href}
-                  href={item.href}
+                  href={withPrefix(linkPrefix, item.href)}
                   className="lg:text-[13px] lg:tracking-[0.12em]"
                 >
                   {item.label}
@@ -182,7 +187,7 @@ export default function Navbar() {
 
           <div className="flex items-center justify-end gap-2">
             <a
-              href="#pricing"
+              href={withPrefix(linkPrefix, "#pricing")}
               className={[
                 "inline-flex items-center justify-center rounded-full bg-red-500 px-6 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-red-600",
                 isScrolled ? "h-10 px-5 lg:h-9 lg:px-4" : "h-12 lg:h-10 lg:px-5",

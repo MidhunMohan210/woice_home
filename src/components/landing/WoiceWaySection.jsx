@@ -309,8 +309,14 @@ export default function WoiceWaySection() {
           ref={headingRef}
           className={`mb-16 text-center transition-all duration-700 ${headingVis ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
-          <div className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-gray-500  px-3 py-1.5 rounded-full mb-5">
+
+          <div className="mb-2 flex items-center justify-center gap-1.5 sm:mb-4 sm:gap-1">
+
+          <div className="h-px w-4 bg-white/14 sm:w-7" />
+          <div className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-gray-500  px-3 py-1.5 rounded-full ">
             The Woice Way
+          </div>
+          <div className="h-px w-4 bg-white/14 sm:w-7" />
           </div>
           <h2 className="mx-auto mb-4 max-w-2xl text-[2rem] font-semibold leading-tight tracking-tight text-zinc-50 sm:text-5xl">
             One link. Two paths. Better reputation.

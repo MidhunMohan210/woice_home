@@ -87,7 +87,7 @@ export default function FAQSection() {
                   index === 0 ? "border-t border-white/10" : "",
                 ].join(" ")}
               >
-                <AccordionTrigger className="py-3 text-[11px]  tracking-tight text-white/80 hover:text-white sm:py-6 sm:text-lg">
+                <AccordionTrigger className="py-3 text-[13px]  tracking-tight text-white/80 hover:text-white sm:py-6 sm:text-lg">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="max-w-3xl pb-3 pr-6 text-[11px] leading-5 text-slate-400 sm:pb-6 sm:pr-10 sm:text-[15px] sm:leading-7">
