@@ -15,16 +15,16 @@ export default function Footer({ className = "" }) {
         </Link>
 
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm font-medium text-slate-500">
-          <Link href="/" className="transition hover:text-slate-950">
+          <Link href="/about" className="transition hover:text-slate-950">
             About
           </Link>
           <Link href="/contact" className="transition hover:text-slate-950">
             Contact
           </Link>
-          <Link href="/terms" className="transition hover:text-slate-950">
+          <Link href="/terms-and-conditions" className="transition hover:text-slate-950">
             Terms & Conditions
           </Link>
-          <Link href="/privacy" className="transition hover:text-slate-950">
+          <Link href="/privacy-policy" className="transition hover:text-slate-950">
             Privacy Policy
           </Link>
         </div>
