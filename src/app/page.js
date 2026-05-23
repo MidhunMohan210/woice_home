@@ -23,7 +23,7 @@ export default function Home() {
         <TrustedBySection />
         <PricingSection />
         <FAQSection />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Footer />
       </main>
     </div>
