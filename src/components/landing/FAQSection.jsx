@@ -58,25 +58,25 @@ export default function FAQSection() {
       </div>
 
       <div className="section-shell relative px-5 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-sm text-center sm:max-w-2xl">
+        <div className="mx-auto max-w-md text-center sm:max-w-2xl">
            <div className="mb-2 flex items-center justify-center gap-1.5 sm:mb-4 sm:gap-2.5">
             <div className="h-px w-4 bg-white/14 sm:w-7" />
-            <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-white/80 sm:text-[11px] sm:tracking-[0.24em]">
+            <p className="text-[11px] font-medium uppercase tracking-[0.22em] text-white/80 sm:text-[11px] sm:tracking-[0.24em]">
               FAQ
             </p>
             <div className="h-px w-4 bg-white/14 sm:w-7" />
           </div>
 
-          <h2 className="mt-2 text-[1.3rem] font-semibold tracking-tight text-white sm:mt-5 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-2 text-[1.65rem] font-semibold tracking-tight text-white sm:mt-5 sm:text-4xl lg:text-5xl">
             Frequently asked questions  
           </h2>
 
-          <p className="mx-auto mt-2 max-w-[17rem] text-[11px] leading-5 text-slate-400 sm:mt-4 sm:max-w-xl sm:text-[15px] sm:leading-7">
+          <p className="mx-auto mt-3 max-w-[19rem] text-[14px] leading-6 text-slate-400 sm:mt-4 sm:max-w-xl sm:text-[15px] sm:leading-7">
             Everything you need to know before using Woice during beta.
           </p>
         </div>
 
-        <div className="mx-auto mt-6 max-w-3xl sm:mt-14 sm:max-w-5xl">
+        <div className="mx-auto mt-8 max-w-3xl sm:mt-14 sm:max-w-5xl">
           <Accordion defaultValue={["item-1"]}>
             {faqs.map((item, index) => (
               <AccordionItem
@@ -87,10 +87,10 @@ export default function FAQSection() {
                   index === 0 ? "border-t border-white/10" : "",
                 ].join(" ")}
               >
-                <AccordionTrigger className="py-3 text-[13px]  tracking-tight text-white/80 hover:text-white sm:py-6 sm:text-lg">
+                <AccordionTrigger className="py-4 text-[15px] tracking-tight text-white/80 hover:text-white sm:py-6 sm:text-lg">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="max-w-3xl pb-3 pr-6 text-[11px] leading-5 text-slate-400 sm:pb-6 sm:pr-10 sm:text-[15px] sm:leading-7">
+                <AccordionContent className="max-w-3xl pb-4 pr-6 text-[14px] leading-6 text-slate-400 sm:pb-6 sm:pr-10 sm:text-[15px] sm:leading-7">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
