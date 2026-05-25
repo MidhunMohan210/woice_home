@@ -2,13 +2,14 @@ import FAQSection from "@/components/landing/FAQSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import Footer from "@/components/landing/Footer";
 import HeroSection from "@/components/landing/HeroSection";
-import HowItWorks from "@/components/landing/HowItWorks";
+import HowItWorks from "@/components/landing/WebsiteWidgetSection";
 import Navbar from "@/components/landing/Navbar";
 import PricingSection from "@/components/landing/PricingSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import Testimonials from "@/components/landing/Testimonials";
 import TrustedBySection from "@/components/landing/TrustedBySection";
 import WoiceWaySection from "@/components/landing/WoiceWaySection";
+import WebsiteWidgetSection from "@/components/landing/WebsiteWidgetSection";
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <WoiceWaySection />
-        {/* <HowItWorks /> */}
         <FeaturesSection />
+        <WebsiteWidgetSection />  
         <TrustedBySection />
         <PricingSection />
         <FAQSection />
