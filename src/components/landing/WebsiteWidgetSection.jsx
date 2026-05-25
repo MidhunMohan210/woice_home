@@ -3,7 +3,7 @@ const steps = [
     number: "01",
     title: "Approve your testimonials",
     description:
-      "Control which customer testimonials are visible publicly before they appear on your website.",
+     "Pick the customer testimonials you want to show publicly on your website.",
   },
   {
     number: "02",
