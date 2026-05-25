@@ -302,7 +302,8 @@ export default function WoiceWaySection() {
   }, []);
 
   return (
-    <section className="bg-[#0c0c0e] px-3 py-20 sm:px-6 sm:py-24">
+    <section 
+    id="woice-way" className="bg-[#0c0c0e] px-3 py-20 sm:px-6 sm:py-24">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div

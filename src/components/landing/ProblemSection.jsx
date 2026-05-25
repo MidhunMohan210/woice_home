@@ -739,7 +739,7 @@ export default function ProblemSection() {
 
         <div className="mt-6 sm:mt-10 lg:mt-12">
           <a
-            href="#"
+            href="#woice-way"
             className="inline-flex items-center gap-2 text-sm font-medium text-slate-950 underline-offset-4 hover:underline"
           >
             See how Woice fixes this

@@ -7,7 +7,7 @@ import Image from "next/image";
 import logo from "../../assets/landing/logo.svg";
 
 const navItems = [
-  { label: "How it works", href: "#how-it-works" },
+  { label: "How it works", href: "#woice-way" },
   { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
@@ -87,11 +87,11 @@ export default function Navbar({ linkPrefix = "" }) {
           {/* Right: CTA + hamburger */}
           <div className="flex items-center gap-1.5">
             <NextLink
-              href={withPrefix(linkPrefix, "#pricing")}
+              href=""
               className="inline-flex h-7 items-center justify-center rounded-full bg-red-500 px-3 text-[11px] font-semibold text-white transition-all duration-200 hover:bg-red-600 active:scale-95"
-              onClick={() => setIsMobileMenuOpen(false)}
+              // onClick={() => setIsMobileMenuOpen(false)}
             >
-              Start Free
+              Login
             </NextLink>
 
             <button
@@ -193,7 +193,7 @@ export default function Navbar({ linkPrefix = "" }) {
                 isScrolled ? "h-10 px-5 lg:h-9 lg:px-4" : "h-12 lg:h-10 lg:px-5",
               ].join(" ")}
             >
-              Start Free
+              Login
             </a>
           </div>
         </div>

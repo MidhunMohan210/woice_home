@@ -29,8 +29,8 @@ export default function Footer({ className = "" }) {
           </Link>
         </div>
 
-        <p className="text-sm text-slate-400">
-          &copy; 2026 Woice. All rights reserved to Midhun Mohan.
+        <p className="text-xs sm:text-sm  text-slate-400">
+          &copy; 2026 Woice. All rights reserved.
         </p>
       </div>
     </footer>
