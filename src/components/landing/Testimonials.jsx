@@ -12,9 +12,9 @@ export default function Testimonials() {
       />
 
       <Script
-        src="https://www.woice.it.com/embed.js"
+        src="https://app.woice.it.com/embed.js"
         strategy="afterInteractive"
-        data-base-url="https://www.woice.it.com"
+        data-base-url="https://app.woice.it.com"
       />
     </>
   );
