@@ -86,13 +86,13 @@ export default function Navbar({ linkPrefix = "" }) {
 
           {/* Right: CTA + hamburger */}
           <div className="flex items-center gap-1.5">
-            <NextLink
-              href=""
+            <a
+              href="https://app.woice.it.com/login"
               className="inline-flex h-7 items-center justify-center rounded-full bg-red-500 px-3 text-[11px] font-semibold text-white transition-all duration-200 hover:bg-red-600 active:scale-95"
-              // onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Login
-            </NextLink>
+            </a>
 
             <button
               type="button"
@@ -187,7 +187,7 @@ export default function Navbar({ linkPrefix = "" }) {
 
           <div className="flex items-center justify-end gap-2">
             <a
-              href={withPrefix(linkPrefix, "#pricing")}
+              href="https://app.woice.it.com/login"
               className={[
                 "inline-flex items-center justify-center rounded-full bg-red-500 px-6 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-red-600",
                 isScrolled ? "h-10 px-5 lg:h-9 lg:px-4" : "h-12 lg:h-10 lg:px-5",

@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
-import dashboardPreview from "../../assets/product preview/dashboard.png";
-import { Button } from "@/components/ui/button";
+import dashboardPreview from "../../assets/product preview/dashboard2.png";
 
 export default function HeroSection() {
   return (
@@ -38,10 +37,13 @@ export default function HeroSection() {
           </p>
 
           <div className="mt-6 flex w-full max-w-md flex-col items-center gap-3 sm:mt-7 sm:max-w-none sm:flex-row sm:justify-center">
-            <Button className="h-11 w-full rounded-full bg-rose-500 px-6 text-sm text-white hover:bg-rose-600 sm:h-12 sm:w-auto">
+            <a
+              href="https://app.woice.it.com/register"
+              className="inline-flex h-11 w-full items-center justify-center gap-1.5 rounded-full bg-rose-500 px-6 text-sm font-medium text-white transition-all hover:bg-rose-600 sm:h-12 sm:w-auto"
+            >
               Get started
               <ArrowRight className="size-4" />
-            </Button>
+            </a>
             {/* */}
           </div>
 

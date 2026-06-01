@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Footer from "@/components/landing/Footer";
 import Navbar from "@/components/landing/Navbar";
 import { ArrowRight, Globe, Mail, MapPin, Phone } from "lucide-react";
@@ -71,13 +70,13 @@ export default function ContactPage() {
                 </p>
 
                 <div className="mt-7 flex w-full max-w-xs flex-col gap-3 sm:max-w-none sm:flex-row items-center justify-center">
-                  <Link
-                    href="/login"
+                  <a
+                    href="https://app.woice.it.com/register"
                     className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full bg-red-500 px-5 text-sm font-semibold text-white transition hover:bg-red-600 sm:w-auto"
                   >
                     Get Started
                     <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </a>
                   <a
                     href="mailto:contact@woice.it.com"
                     className="inline-flex h-10 w-full items-center justify-center rounded-full border border-slate-200 px-5 text-sm font-medium text-slate-700 transition hover:bg-slate-50 sm:w-auto"

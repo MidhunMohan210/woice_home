@@ -146,16 +146,16 @@ export default function PricingSection() {
             {/* Actions */}
             <div className="mt-5 flex w-full flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
          
-              <button
-               style={{
+              <a
+                href="https://app.woice.it.com/register"
+                style={{
                   boxShadow:
                     "0 0 0 1px rgba(109,106,246,0.5) inset, 0 8px 20px rgba(109,106,246,0.28)",
                 }}
-                href="#faq"
                 className="inline-flex h-10 items-center justify-center rounded-full bg-indigo-500 px-4 text-[13px] font-semibold text-white transition-all duration-200 hover:-translate-y-px hover:bg-indigo-400 active:translate-y-0 sm:h-12 sm:w-3/4 sm:px-6 sm:text-sm"
               >
                 Join beta
-              </button>
+              </a>
               <a
                 href="#faq"
                 className="inline-flex h-10 items-center justify-center rounded-full border border-white/10 px-4 text-[13px] font-semibold text-white/52 transition-all duration-200 hover:border-white/14 hover:bg-white/[0.03] hover:text-white/86 sm:h-12 sm:min-w-[160px] sm:px-6 sm:text-sm"

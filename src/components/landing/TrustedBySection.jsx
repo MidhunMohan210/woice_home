@@ -61,7 +61,7 @@ function IndustryPill({ industry }) {
 
 export default function TrustedBySection() {
   return (
-    <section className="relative overflow-hidden bg-[#f5f5f7] py-16 sm:py-20">
+    <section className="relative overflow-hidden bg-[#f5f5f7] py-16  sm:py-48 ">
       <div className="section-shell relative">
         <div className="mx-auto max-w-5xl">
           <div className="mb-4 flex items-center justify-center gap-2.5">

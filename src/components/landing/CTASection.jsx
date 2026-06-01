@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function CTASection() {
@@ -19,12 +18,12 @@ export default function CTASection() {
               For now, this keeps the structure complete and ready for real
               copy, social proof, and conversion details.
             </p>
-            <Button
-              variant="secondary"
-              className="h-12 rounded-full bg-white px-6 text-black hover:bg-white/90"
+            <a
+              href="https://app.woice.it.com/register"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-black transition hover:bg-white/90"
             >
               Get started
-            </Button>
+            </a>
           </CardContent>
         </Card>
       </div>
