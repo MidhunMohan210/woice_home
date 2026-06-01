@@ -28,7 +28,7 @@ export default function TestimonialPreviewSection() {
             <div className="relative overflow-hidden rounded-[22px] border border-slate-200/80 bg-slate-950 shadow-[0_18px_50px_-24px_rgba(2,6,23,0.5)] sm:rounded-[30px]">
               <Image
                 src={dashboardPreview}
-                alt="Woice product dashboard preview"
+                alt="Woice feedback management dashboard with testimonial approvals, customer reviews, and private response tracking"
                 priority
                 className="h-auto w-full object-cover object-top"
               />

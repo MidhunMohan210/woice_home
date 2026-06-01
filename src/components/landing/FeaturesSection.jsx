@@ -98,7 +98,7 @@ function FeaturedReviewCard() {
         </div>
 
         <p className="max-w-[20ch] text-[1.05rem] font-semibold leading-[1.45] text-[#f1f1f1]">
-          Turn every happy customer into a Google review automatically.
+          Guide every happy customer into a Google review.
         </p>
 
         <div className="mt-4 rounded-xl p-4"

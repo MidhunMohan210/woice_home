@@ -66,7 +66,7 @@ export default function HeroSection() {
             <div className="relative aspect-[16/9] overflow-hidden rounded-[10px] bg-slate-950 shadow-[0_18px_50px_-24px_rgba(2,6,23,0.7)] sm:aspect-[16/8.7] sm:rounded-[15px]">
               <Image
                 src={dashboardPreview}
-                alt="Woice product dashboard preview"
+                alt="Screenshot of the Woice dashboard showing customer feedback, private complaints, and approved testimonials"
                 priority
                 className="h-full w-full object-cover object-top"
               />
